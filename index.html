@@ -15,35 +15,77 @@
     <header>
       <!--  Begin HEADER     -->
       <nav class="navbar">
-        <div class="mobileMenu">
+        <div class="mobileNavbar">
           <div class="grid-item1">
-               <a class="menu" href="#"><img src="./src/images/mobile_menu.png" alt="Menu"></a>
+               <a class="hamburguer" href="#"><img src="./src/images/hamburguerIcon.png" alt="hamburguer"></a>
           </div>
           <div class="grid-item1">
                <a class="logo" href="#"> <img src= "./src/images/negro.png" alt"logo"></a>
+          </div>
+          <div class="mobileMenu">
+            <ul class="itemsMobileMenu">
+              <li class="close_menu"> <img src="./src/images/close_menu.png" alt="Close"/></li>
+              <li class="itemProgram"> <a href="#mainProgram">Program</a> </li>
+              <li class="itemSpeaker"> <a href="#speaker">Speaker</a> </li>
+              <li class="itemAbout"> <a href="#about">About</a> </li>
+            </ul>
           </div>
         </div>
     </header>
 
     <main>
         <div class="hero">
+          <div clas="card1">
           <h1 class="home_title">TRAFFIC & CONVERSION SUMMIT 2022 </h1>
           <h1 class="home_title2">The congress of online advertising!</h1>
           <p class="description"> More than 10 hours of training divided into three days in which you will learn from active professionals knowledge, tips, and strategies of online advertising and digital strategy. Whether you're starting from scratch or already have experience,.</p>
+          <div class="dateInfo"> <font>2022.09.13 (Tue) ~ 15 (Thu)</font> </div>
+          <div class="locate">
+            <font>@ Sports Center San Miguel de Sema Boyaca - Colombia</font>
+          </div>
+        </div>
       </div>
+      <section class="mainProgram">
+        <h1 class="program" id="mainProgram">Main Program</h1>
+        <div class="guideBar"> </div>
+        <div class="programList">
+          <div class="programIcon"><img src="./src/images/program_icon_01.png" alt="conference"></div>
+          <div class="programSubTitle"><p>conference</p></div>
+          <div class="programSubDescription"><p>The Simple Two-step Marketing System You Can Copy that Built a $1.3 Billion Company with 1,120 Locations in Just 5 Years</P></div>
+        </div>
+        <div class="programList">
+          <div class="programIcon"><img src="./src/images/program_icon_02.png" alt="conference"></div>
+          <div class="programSubTitle"><p> - exhibition </p></div>
+          <div class="programSubDescription"><p>You will know the keys to growing professionally or with your business without depending on algorithms or market fluctuations.</P></div>
+        </div>
+        <div class="programList">
+          <div class="programIcon"><img src="./src/images/program_icon_03.png" alt="conference"></div>
+          <div class="programSubTitle"><p>-- forum  --  </p></div>
+          <div class="programSubDescription"><p>You will learn to invest in online advertising and you will obtain the keys to dominating the digital strategy, regardless of your starting point or knowledge of the sector.</P></div>
+        </div>
+        <div class="programList">
+          <div class="programIcon"><img src="./src/images/program_icon_04.png" alt="conference"></div>
+          <div class="programSubTitle"><p>workshop  </p></div>
+          <div class="programSubDescription"><p>Machine Driven Marketing | Understanding The New Mechanics Of Digital Marketing</P></div>
+        </div>
+        <div class="programList">
+          <div class="programIcon"><img src="./src/images/program_icon_05.png" alt="conference"></div>
+          <div class="programSubTitle"><p>- Party ---  </p></div>
+          <div class="programSubDescription"><p>How Businesses are Using Affiliate Partnerships to Accelerate their Marketing Innovation.</P></div>
+        </div>
+     </section>
+      <!--  Start  dinamic Content JavaScript object -->
 
-      <div class="mainProgram">
-        <h1 class="program">Main Program</h1>
-        <p class="description"> More than 10 hours of training divided into three days in which you will learn from active professionals knowledge, tips, and strategies of online advertising and digital strategy. Whether you're starting from scratch or already have experience,.</p>
-    </div>
-
-      <!--  Start  contenido  Dinamico con JavaScript object -->
-            <section class="containerobj" id="portfolio">
-           </section>
-    </main>
 
 
+ <section class="containerobj" id="speaker">
+  </section>
 
+
+</main>
+
+
+<!--
             <h1> Grid Template </h1>
             <div class="grid-container">
               <div class="grid-item">1</div>
@@ -56,9 +98,10 @@
               <div class="grid-item">8</div>
               <div class="grid-item">9</div>
             </div>
-
+-->
 
   <!--  <script src="./src/js/menu.js"></script> -->
        <script src="./src/js/main.js"></script>
+       <script src="./src/js/mobileMenu.js"></script>
   </body>
 </html>
