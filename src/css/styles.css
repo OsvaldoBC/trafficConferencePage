@@ -194,8 +194,6 @@ body {
 
   }
 
-}
-
 .home_title2 {
   font-family: 'COCOGOOSE', sans-serif;
   font-weight: 300;
@@ -354,6 +352,122 @@ body {
 padding-right: 10px;
 }
 
+/* About page */
+
+.aboutFirstSection {
+    background-image: url(../images/mobile_intro_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+.aboutTitle {
+  font-family: 'COCOGOOSE', sans-serif;
+  color: rgb(239, 81, 60);
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.aboutDescription {
+  line-height: 24px;
+  border: 1px solid rgb(216, 219, 221);
+  background-color: #fff;
+  padding: 10px;
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.aboutContact {
+  line-height: 24px;
+  margin: 20px 50px 1px 50px;
+  text-align: center;
+}
+
+.aboutEmail {
+    text-decoration-line: underline;
+    font-weight: 700;
+}
+
+.aboutSecondSection {
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 105vh;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.aboutLogo {
+  font-size: 12px;
+  padding: 1px 30px 20px 30px;
+  text-align: center;
+}
+
+.aboutPhoto1 {
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 5px 5px;
+    background: none;
+    filter: sepia(100%);
+}
+
+.aboutPhoto2 {
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 5px 5px;
+    background: none;
+    filter: sepia(100%);
+}
+
+.aboutPartner {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.partners {
+  background-color: #3e3e3e;
+  height: 30vh;
+
+}
+
+.partnerIcons {
+    display: flex;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.rigths {
+    font-size: 12px;
+    padding-left: 30px;
+}
+
+.license {
+    background-color: #fff;
+    color: black;
+    font-size: 24px;
+    padding: 30px 30px;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+}
+
 @media (min-width: 768px) {
 
   .topBar {
@@ -424,5 +538,12 @@ padding-right: 10px;
     gap: 20px;
     padding-bottom: 30px;
   }
+
+  .AboutPhotos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
 
 }
