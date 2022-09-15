@@ -29,36 +29,40 @@ let speakersData = [{
 for (let i = 0; i < speakersData.length; i++) {
   console.log(speakersData [i]);
   let card1 = document.createElement('div');
-  card1.classList.add('container1');
+  card1.classList.add('speakerContainer');
 
-  let portfolio = document.createElement('div');
-  portfolio.classList.add('portfolio');
+  let speakerImage = document.createElement('div');
+  speakerImage.classList.add('speakerImage');
 
-  let contenido1 = document.createElement('div');
-  contenido1.classList.add('contenido1');
+  let speakers = document.createElement('div');
+  speakers.classList.add('speakers');
 
-  let cardh2 = document.createElement('h2');
-  cardh2.classList.add('tonic');
-  cardh2.textContent = speakersData [i].name;
-  contenido1.appendChild(cardh2);
+  let speakerName = document.createElement('h2');
+  speakerName.textContent = speakersData [i].name;
+  speakerName.classList.add('speakerName');
+
+  speakers.appendChild(speakerName);
 
   let company = document.createElement('h2');
-  company.classList.add('company');
+  company.classList.add('speakerCompany');
   company.textContent = speakersData [i].company;
-  contenido1.appendChild(company);
 
-  let cardp = document.createElement('p');
-  cardp.classList.add('project-detail');
-  cardp.textContent = speakersData [i].description;
+  speakers.appendChild(company);
+
+  let description = document.createElement('p');
+  description.classList.add('speakerDescription');
+  description.textContent = speakersData [i].description;
+
+  speakers.appendChild(description);
 
   let image = document.createElement('img');
   image.src = speakersData [i].image;
   image.alt = 'imagen';
 
-  portfolio.appendChild(image);
-  contenido1.appendChild(cardp);
-  card1.appendChild(portfolio);
-  card1.appendChild(contenido1);
+  speakerImage.appendChild(image);
 
-  document.querySelector('.containerobj').appendChild(card1);
+  card1.appendChild(speakerImage);
+  card1.appendChild(speakers);
+
+  document.querySelector('.speakerSection').appendChild(card1);
 }

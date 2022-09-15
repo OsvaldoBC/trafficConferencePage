@@ -101,8 +101,6 @@ picture {
 
 /* utility classes */
 
-
-
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -115,21 +113,28 @@ body {
 
 /* mobile Header */
 
+.topBar {
+  display:none;
+}
+
+.mobileNavbar {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+
 .hamburguer {
 
 }
 
-.mobileNavbar {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  padding: 10px;
-  align-items: center;
-  background-color: white;
+.navbarItem2 {
+  display: none;
 }
 
 .mobileMenu {
-  background-color: black;
-  background-size: cover;
+
 }
 
 .itemsMobileMenu {
@@ -154,9 +159,14 @@ body {
   padding-left: 20px;
 }
 
-.itemsMobileMenu img {
-  margin-left: 290px
+.itemsMobileMenu a:hover {
+  color: rgb(239, 81, 60);
 }
+
+.itemsDesktopMenu {
+  display: none;
+}
+
 .itemProgram {
 
 }
@@ -169,18 +179,21 @@ body {
 
 }
 
-.grid-item1 {
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  padding: 20px;
+.logoDesktop {
+  display: none;
 }
 
 .home_title {
   font-family: 'COCOGOOSE', sans-serif;
-  background-image: url(../images/mobile_intro_bg.png);
-  color: rgb(239, 81, 60);
-  font-size: 25px;
+  background-image: url(../images/bacground_title.jpg);
+  font-size: 38px;
   font-weight: 900;
   padding: 25px;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  }
+
 }
 
 .home_title2 {
@@ -255,54 +268,44 @@ body {
     margin: 0px auto 54px;
   }
 
-  .programList {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  .programDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 20px;
-    background-color: rgba(255,255,255,.1);
-    background-size: cover;
+    gap: 15px;
+    padding-bottom: 40px;
+  }
+
+  .programList {
+    background-color: #3e3e3e;
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    width: 90%;
   }
 
   .programIcon {
+
+  }
+
+  .programTitle {
+    color: rgb(239, 81, 60);
+    font-weight: 700;
+    padding-left: 20px;
+  }
+
+  .programDescription {
     height: auto;
-    width: auto;
-    size: 50px
     text-align: left;
+    padding-left: 20px;
+
   }
 
-  .programSubTitle {
-    color: #ef513c;
-    font-size: 1em;
-    font-weight: bold;
-    padding-left: 10px;
-  }
-
-  .programSubDescription {
-    height: auto;
-    font-size: 1em;
-    text-align: left;
-    padding-left: 10px;
-  }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196f3;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.containerobj {
+.speakerSection {
   width: auto;
   height: auto;
+  background-color: white;
 }
 
 .card1 {
@@ -314,4 +317,112 @@ body {
   flex-direction: column;
   justify-content: space-around;
   border-radius: 0 60px 0 0;
+}
+
+.speakers_title {
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+.speakerContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.speakerName {
+  font-size: 22px;
+  color: black;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  }
+
+.speakerCompany {
+  color: rgb(239, 81, 60);
+  font-size: 18px;
+  font-style: italic;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.speakerDescription {
+padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+
+  .topBar {
+    background-color: #3e3e3e;
+    color: #fff;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .social_icons {
+    background-color: #3e3e3e;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-right: 40px;
+  }
+
+  .navbarItem1 {
+    display:none;
+  }
+
+  .navbarItem2 {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+  }
+
+  .itemsDesktopMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    height: 70px;
+    justify-items: flex-end;
+    padding-top: 25px;
+  }
+
+  .itemsDesktopMenu a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  .programDetail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .programList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    width: 90%;
+    padding-top: 20px;
+    height: 250px;
+  }
+
+  .hero {
+    background-image: url(../images/first-section.png);
+  }
+
+  .speakerSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+
 }

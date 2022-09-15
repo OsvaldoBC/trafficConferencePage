@@ -1,4 +1,4 @@
-// mobile menu //
+// mobile menu  //
 const openMenu = document.querySelector('.hamburguer');
 const modalMenu = document.querySelector('.itemsMobileMenu');
 
@@ -15,18 +15,18 @@ closeMenu.addEventListener('click', () => {
 
 //  Item of the Mobile menu //
 
-const itemProgram = document.querySelector('.itemProgram');
-const itemSpeaker = document.querySelector('.itemSpeaker');
-const itemAbout = document.querySelector('.itemAbout');
+const iProgram = document.querySelector('.itemProgram');
+const iSpeaker = document.querySelector('.itemSpeaker');
+const iAbout = document.querySelector('.itemAbout');
 
-itemProgram.addEventListener('click', () => {
+iProgram.addEventListener('click', () => {
   modalMenu.style.display = 'none';
 });
 
-itemSpeaker.addEventListener('click', () => {
+iSpeaker.addEventListener('click', () => {
   modalMenu.style.display = 'none';
 });
 
-itemAbout.addEventListener('click', () => {
+iAbout.addEventListener('click', () => {
   modalMenu.style.display = 'none';
 });
