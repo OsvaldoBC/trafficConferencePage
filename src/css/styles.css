@@ -210,7 +210,6 @@ body {
   text-align: center;
   letter-spacing: 1px;
   vertical-align: inherit;
-  font: bold 15px Verdana;
   margin-bottom: 10px;
 }
 
@@ -439,7 +438,6 @@ body {
 }
 
 @media (min-width: 768px) {
-
   .topBar {
     background-color: #3e3e3e;
     color: #fff;
