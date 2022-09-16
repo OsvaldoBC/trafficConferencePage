@@ -92,10 +92,10 @@ picture {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+    scroll-behavior: auto;
   }
 }
 
@@ -188,7 +188,7 @@ body {
 
 .hero {
   display: flex;
-  height: 70vh;
+  height: 90vh;
   background-image: url(../images/mobile_intro_bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -420,13 +420,11 @@ body {
   height: 30vh;
 }
 
+
 .partnerIcons {
   display: flex;
   padding-bottom: 20px;
-  margin-right: 20px;
   justify-content: center;
-  margin-left: 10px;
-  flex-wrap: wrap;
 }
 
 .rigths {
@@ -463,6 +461,16 @@ body {
     gap: 20px;
     align-items: center;
     margin-right: 40px;
+  }
+
+  .mobileNavbar {
+    width: 85%;
+    margin: auto;
+  }
+
+  .navbar {
+    width: auto;
+    background-color: white;
   }
 
   .navbarItem1 {
@@ -522,13 +530,23 @@ body {
     justify-content: center;
   }
 
-  .partners {
+  .partnersAbout {
     display: none;
   }
 
   .license {
     background-color: #3e3e3e;
     color: white;
+  }
+
+  .license {
+    background-color: #3e3e3e;
+    color: white;
+  }
+
+  .backgroundReverse {
+    color: black;
+    background-color: #fff;
   }
 
   .card1 {
