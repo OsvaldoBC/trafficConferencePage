@@ -11,6 +11,10 @@ Each of these pages have versions for 2 different screen sizes:
 Mobile: up to 768px wide.
 Desktop: 768px or wider.
 
+## Live Demo
+
+[Live Demo Link](https://osvaldobc.github.io/trafficConferencePage/)
+
 ## interactions
 
 The home page have a link in the menu to the about page.
@@ -38,11 +42,6 @@ git@github.com:OsvaldoBC/trafficConferencePage.git
 - HTML
 - CSS
 - JS
-
-## Live Demo
-
-[Live Demo Link](https://osvaldobc.github.io/trafficConferencePage/)
-
 
 ### Prerequisites
 

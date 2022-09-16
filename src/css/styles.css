@@ -198,13 +198,8 @@ body {
   justify-content: flex-start;
 }
 
-.card1{
-  display:flex;
-  width: auto;
-}
-
-.card2{
-  display:flex;
+.card2 {
+  display: flex;
   width: auto;
 }
 
@@ -547,5 +542,4 @@ body {
   .dateInfo {
     font-size: 25px;
   }
-
 }
