@@ -1,0 +1,559 @@
+:root {
+  --very-light-purple: hsl(240, 100%, 96%);
+  --light-purple: hsl(235, 100%, 83%);
+  --medium-purple: hsl(234, 100%, 75%);
+  --dark-purple: hsl(234, 100%, 69%);
+  --color-border: hsl(218, 13%, 48%);
+  --color-icon: hsl(218, 20%, 39%);
+  --color-nav-p: hsl(218, 31%, 30%);
+  --color-heading-mobile: hsl(218, 54%, 20%);
+  --color-heading-desktop: hsl(218, 76%, 15%);
+  --light-blue: hsl(234, 97%, 62%);
+  --bright-blue: hsl(235, 72%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+  --bg-body: hsl(0, 0%, 90%);
+  --color-light-gray: hsl(217, 13%, 74%);
+  --color-smoke-white: hsl(240, 100%, 96%);
+  --card-border: hsl(218, 14%, 89%);
+  --fs-tiny: 0.75em;
+  --fs-100: 0.8215em;
+  --fs-200: 0.9375em;
+  --fs-300: 1em;
+  --fs-400: 1.0625em;
+  --fs-500: 1.125;
+  --fs-600: 1.25em;
+  --fs-700: 2em;
+  --fs-800: 2.5em;
+  --fs-900: 3em;
+
+  font-family: "P", sans-serif;
+  font-size: 1rem;
+
+  --fw-lighter: 400;
+  --fw-regular: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --size-100: 0.5em;
+  --size-200: 1em;
+  --size-300: 1.5em;
+  --size-400: 2em;
+  --size-500: 2.5em;
+  --size-600: 3em;
+  --size-700: 4em;
+  --size-800: 6em;
+  --size-900: 7em;
+  --size-xl: 9em;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 90px;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+    scroll-behavior: auto;
+  }
+}
+
+/* utility classes */
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  background-color: var(--bg-body);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  color: gray;
+}
+
+/* mobile Header */
+
+.topBar {
+  display: none;
+}
+
+.mobileNavbar {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.navbar {
+  height: auto;
+}
+
+.navbarItem2 {
+  display: none;
+}
+
+.itemsMobileMenu {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: 10;
+  width: 85%;
+  height: 70vh;
+  background: #272a32;
+  filter: alpha(opacity=95);
+  opacity: 0.95;
+  display: none;
+}
+
+.itemsMobileMenu a {
+  text-decoration: none;
+  font-size: 1em;
+  height: 2.5em;
+  line-height: 2.5em;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.itemsMobileMenu a:hover {
+  color: rgb(239, 81, 60);
+}
+
+.itemsDesktopMenu {
+  display: none;
+}
+
+.logoDesktop {
+  display: none;
+}
+
+.home_title {
+  font-family: 'COCOGOOSE', sans-serif;
+  background-image: url(../images/bacground_title.jpg);
+  font-size: 38px;
+  font-weight: 900;
+  padding: 25px;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.home_title2 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 10px;
+}
+
+/* Main page */
+
+.hero {
+  display: flex;
+  height: 90vh;
+  background-image: url(../images/mobile_intro_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 0 0 60px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card2 {
+  display: flex;
+  width: auto;
+}
+
+.description {
+  line-height: 24px;
+  border: 3px solid #fff;
+  padding: 10px;
+  margin: 20px 20px;
+}
+
+.dateInfo {
+  font-size: 15px;
+  color: rgb(87, 87, 87);
+  font-weight: bold;
+  width: 90%;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+  vertical-align: inherit;
+  margin-bottom: 10px;
+}
+
+.locate {
+  font-size: 15px;
+  width: 90%;
+  display: inline-block;
+  text-align: center;
+}
+
+.mainProgram {
+  background-image: url(../images/Partners.jpg);
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  align-items: center;
+  color: white;
+}
+
+.guideBar {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid rgb(239, 81, 60);
+  margin: 1px auto 54px;
+}
+
+.programDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 40px;
+}
+
+.programList {
+  background-color: #3e3e3e;
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  width: 90%;
+}
+
+.programTitle {
+  color: rgb(239, 81, 60);
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.programDescription {
+  height: auto;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.speakerSection {
+  width: auto;
+  height: auto;
+  background-color: white;
+}
+
+.card1 {
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.speakers_title {
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.speakerContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.speakerName {
+  font-size: 22px;
+  color: black;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.speakerCompany {
+  color: rgb(239, 81, 60);
+  font-size: 18px;
+  font-style: italic;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.speakerDescription {
+  padding-right: 10px;
+}
+
+/* About page */
+
+.aboutFirstSection {
+  background-image: url(../images/mobile_intro_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.aboutTitle {
+  font-family: 'COCOGOOSE', sans-serif;
+  color: rgb(239, 81, 60);
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.aboutDescription {
+  line-height: 24px;
+  border: 1px solid rgb(216, 219, 221);
+  background-color: #fff;
+  padding: 10px;
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.aboutContact {
+  line-height: 24px;
+  margin: 20px 50px 1px 50px;
+  text-align: center;
+}
+
+.aboutEmail {
+  text-decoration-line: underline;
+  font-weight: 700;
+}
+
+.aboutSecondSection {
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 105vh;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.aboutLogo {
+  font-size: 12px;
+  padding: 1px 30px 20px 30px;
+  text-align: center;
+}
+
+.aboutPhoto1 {
+  display: block;
+  margin: auto;
+  width: 90%;
+  padding: 5px 5px;
+  background: none;
+  filter: sepia(100%);
+}
+
+.aboutPhoto2 {
+  display: block;
+  margin: auto;
+  width: 90%;
+  padding: 5px 5px;
+  background: none;
+  filter: sepia(100%);
+}
+
+.aboutPartner {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+}
+
+.partners {
+  background-color: #3e3e3e;
+  height: 30vh;
+}
+
+.partnerIcons {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.rigths {
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+.license {
+  background-color: #fff;
+  color: black;
+  font-size: 24px;
+  padding: 30px 30px;
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  height: 150px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .topBar {
+    background-color: #3e3e3e;
+    color: #fff;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .social_icons {
+    background-color: #3e3e3e;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-right: 40px;
+  }
+
+  .mobileNavbar {
+    width: 85%;
+    margin: auto;
+  }
+
+  .navbar {
+    width: auto;
+    background-color: white;
+  }
+
+  .navbarItem1 {
+    display: none;
+  }
+
+  .navbarItem2 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .itemsDesktopMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    height: 70px;
+    justify-items: flex-end;
+    padding-top: 25px;
+  }
+
+  .itemsDesktopMenu a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  .programDetail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .programList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    width: 90%;
+    padding-top: 20px;
+    height: 250px;
+  }
+
+  .hero {
+    background-image: url(../images/first-section.png);
+  }
+
+  .speakerSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+
+  .AboutPhotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .partnersAbout {
+    display: none;
+  }
+
+  .license {
+    background-color: #3e3e3e;
+    color: white;
+  }
+
+  .backgroundReverse {
+    color: black;
+    background-color: #fff;
+  }
+
+  .card1 {
+    width: 50%;
+    margin-left: 250px;
+  }
+
+  .card2 {
+    width: 70%;
+    margin-left: 250px;
+  }
+
+  .dateInfo {
+    font-size: 25px;
+  }
+}
