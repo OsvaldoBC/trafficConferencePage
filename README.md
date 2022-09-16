@@ -15,6 +15,8 @@ Desktop: 768px or wider.
 
 [Live Demo Link](https://osvaldobc.github.io/trafficConferencePage/)
 
+[Video Demo link](https://www.loom.com/share/ae639cecde45490e8fa661179b73a671)
+
 ## interactions
 
 The home page have a link in the menu to the about page.

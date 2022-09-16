@@ -425,6 +425,8 @@ body {
   padding-bottom: 20px;
   margin-right: 20px;
   justify-content: center;
+  margin-left: 10px;
+  flex-wrap: wrap;
 }
 
 .rigths {
