@@ -132,7 +132,7 @@ body {
 .itemsMobileMenu {
   position: absolute;
   top: 1px;
-  left: 0px;
+  left: 1px;
   z-index: 10;
   width: 85%;
   height: 70vh;
@@ -171,7 +171,7 @@ body {
   padding: 25px;
   -webkit-background-clip: text;
   color: transparent;
-  }
+}
 
 .home_title2 {
   font-family: 'COCOGOOSE', sans-serif;
@@ -185,7 +185,6 @@ body {
 .hero {
   display: flex;
   height: 70vh;
-  background-size: cover;
   background-image: url(../images/mobile_intro_bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -204,14 +203,14 @@ body {
 
 .dateInfo {
   font-size: 15px;
+  color: rgb(87, 87, 87);
   font-weight: bold;
   width: 90%;
   display: inline-block;
   text-align: center;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
   vertical-align: inherit;
   font: bold 15px Verdana;
-  color: rgb(87, 87, 87);
   margin-bottom: 10px;
 }
 
@@ -221,7 +220,6 @@ body {
   display: inline-block;
   text-align: center;
 }
-
 
 .mainProgram {
   background-image: url(../images/Partners.jpg);
@@ -243,7 +241,7 @@ body {
   width: 53px;
   height: 16px;
   border-bottom: 1px solid rgb(239, 81, 60);
-  margin: 0px auto 54px;
+  margin: 1px auto 54px;
 }
 
 .programDetail {
@@ -312,7 +310,7 @@ body {
   font-weight: 700;
   padding-top: 20px;
   padding-bottom: 10px;
-  }
+}
 
 .speakerCompany {
   color: rgb(239, 81, 60);
@@ -440,7 +438,6 @@ body {
   align-items: center;
 }
 
-
 @media (min-width: 768px) {
 
   .topBar {
@@ -462,7 +459,7 @@ body {
   }
 
   .navbarItem1 {
-    display:none;
+    display: none;
   }
 
   .navbarItem2 {

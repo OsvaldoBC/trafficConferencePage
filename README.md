@@ -41,7 +41,7 @@ git@github.com:OsvaldoBC/trafficConferencePage.git
 
 ## Live Demo
 
-[Live Demo Link](https://osvaldobc.github.io/osvaldojose.github.io/)
+[Live Demo Link](https://osvaldobc.github.io/trafficConferencePage/)
 
 
 ### Prerequisites
